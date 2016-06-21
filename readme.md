@@ -15,7 +15,7 @@ npm install spawn-function
 ### Callback mode
 
 ```js
-spawnFunction(isolatedFunction, [options], [callback])
+spawnFunction(isolatedFunction[, options][, callback])
 ```
 
 * **isolatedFunction**: Function to be executed on the spawned process.
@@ -45,7 +45,7 @@ spawnFunction(function () {
 ### Stream mode
 
 ```js
-let stream = spawnFunction(isolatedFunction, [options])
+let stream = spawnFunction(isolatedFunction[, options])
 ```
 
 * **stream**: Returned stream
