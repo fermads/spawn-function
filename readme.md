@@ -4,7 +4,7 @@ Spawn a child_process and run a function in it. Get the function's results
 on your main process using a stream or callback
 
 
-# Install
+## Install
 
 ```
 npm install spawn-function
@@ -18,12 +18,12 @@ npm install spawn-function
 spawnFunction(isolatedFunction, [options], [callback])
 ```
 
-**isolatedFunction**: Function to be executed on the spawned process.
-Must be a self-contained/isolated function.
-**options**: Object to be passed to child_process.spawn()
-**callback(error, data)**: Callback to be called when isoldatedFunction is done
+* **isolatedFunction**: Function to be executed on the spawned process.
+Must be a self-contained/isolated function
+* **options**: Object to be passed to child_process.spawn()
+* **callback(error, data)**: Callback to be called when isoldatedFunction is done
 
-
+#### Example
 ```js
 let spawnFunction = require('spawn-function')
 
@@ -48,11 +48,12 @@ spawnFunction(function () {
 let stream = spawnFunction(isolatedFunction, [options])
 ```
 
-**stream**: Returned stream
-**isolatedFunction**: Function to be executed on the spawned process.
+* **stream**: Returned stream
+* **isolatedFunction**: Function to be executed on the spawned process.
 Must be a self-contained/isolated function.
-**options**: Object to be passed to child_process.spawn()
+* **options**: Object to be passed to child_process.spawn()
 
+#### Example
 
 ```js
 let stream = spawnFunction(function () {
