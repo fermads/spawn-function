@@ -1,0 +1,27 @@
+{
+  "name": "spawn-function",
+  "version": "0.1.0",
+  "description": "Spawn a child_process and run a function in it. Get results using a stream or callback",
+  "main": "src/index.js",
+  "author": "fermads",
+  "license": "MIT",
+  "homepage": "https://github.com/fermads/spawn-function",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "scripts": {
+    "test": "node src/spawn-function.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fermads/spawn-function.git"
+  },
+  "keywords": [
+    "spawn",
+    "function",
+    "child_process"
+  ],
+  "bugs": {
+    "url": "https://github.com/fermads/spawn-function/issues"
+  }
+}
